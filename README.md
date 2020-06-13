@@ -26,14 +26,23 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+    Both methods receive a function as an argument and executes it for each array element. Map will return a new array, forEach returns undefined. Another difference is the fact map is chainable and forEach is not.
 
 2. Explain the difference between a callback and a higher order function.
+    A higher function is one in which another function is taken as an argument and returns a function. A callback, on the other hand, is a function which is passed to another function with the expectation that the other function will call it.
 
 3. What is closure?
+    Closure combines a function and references to its surrounding state, giving one access to an outer function’s scope from an inner function.
 
 4. Describe the four rules of the 'this' keyword.
+    a.	When the function is contained with the global scope, the value of ‘this’ inside that function will the window object.
+    b.	When a function is called by a dot before it, the object in front of that dot is this
+    c.	When a constructor function is used, this refers to the instance of the object that is created and returned by that constructor function.
+    d.	When a call or apply method is used within JavaScript, this is explicitly defined.
+
 
 5. Why do we need super() in an extended class?
+    Super() refers back to the parent class and is used to call the constructor of the parent class while accessing the parent’s properties and methods.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
@@ -43,12 +52,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 > This section should include instruction for the sprint challenge. These should only cover things that are _not_ being evaluated by the challenge itself, e.g. environment/project setup, link to a starter project, etc. In general, this will be the following Git fork, clone, branch, commit, push, create pull request flow, though may need to be adapted for some specific challenges.
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [X] Create a forked copy of this project
+- [X] Add your team lead as collaborator on Github
+- [X] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [X] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [X] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
